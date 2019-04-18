@@ -13,12 +13,15 @@
 			</mt-tab-container-item>
 			<mt-tab-container-item id="2">
 				<ul class="employment-list">
-					<li v-for="(item, index) in employment" :key="index" class="employment">
-						<div class="flex-box space-between">
-							<p>{{item.name}}</p>
-							<span>{{item.treatment}}</span>
-						</div>
-					</li>
+					<nuxt-link :to="{path: `/recruit/${item.id}`, params: { id: item.id }}" class="item flex-box"  v-for="(item, index) in employment" :key="index">
+						<li class="employment">
+							<div class="flex-box space-between pay">
+								<p>{{item.name}}</p>
+								<span>{{item.treatment}}</span>
+							</div>
+							<div class="workplace">{{item.workplace}}</div>
+						</li>
+					</nuxt-link>
 				</ul>
 			</mt-tab-container-item>
 			<mt-tab-container-item id="3">
@@ -89,10 +92,14 @@ export default {
 	background #fff
 	margin-bottom 20px
 	padding 40px
+	.pay
+		margin-bottom 10px
 	.employment
 		list-style none
 		border-bottom 2px solid #f8f8f8
 		padding 20px 0
+	.workplace
+		color #666
 .tab
 	border-top: 2px solid #f8f8f8
 .mint-tab-container

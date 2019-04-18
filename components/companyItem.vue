@@ -40,7 +40,6 @@ export default {
 <style lang="stylus" scoped>
 
 .item
-	font-size 28px
 	color #333
 	padding 20px
 	margin-bottom 20px
@@ -67,11 +66,9 @@ export default {
 	.info
 		height 40px
 		color #999
-		font-size 26px
 		margin-bottom 10px
 	.location
 		color #999
-		font-size 26px
 	.location-icon
 		width 36px
 		height 36px

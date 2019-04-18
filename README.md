@@ -12,7 +12,7 @@ nuxt2 + vue + vuex + vue-router + mint-ui
 
 ### 跨域处理
 
-`Nuxt` 中没有 `proxyTable` 这么一个配置项来进行跨域的配置。当然幸运的是，在 `Nuxt` 中你可以直接通过配置 `http-proxy-middleware`  来处理跨域。更幸运的是 `Nuxt` 官方提供了两个包来处理 `axios` 跨域问题。
+`Nuxt` 中没有 `proxyTable` 配置项来进行跨域的配置，`Nuxt` 官方提供了两个包来处理 `axios` 跨域问题。
 
 - [@nuxtjs/axios](https://www.npmjs.com/package/@nuxtjs/axios)
 - [@nuxtjs/proxy](https://www.npmjs.com/package/@nuxtjs/proxy)
@@ -45,7 +45,7 @@ npm i @nuxtjs/axios @nuxtjs/proxy -D
 
 引入了stylus预处理器及mint-ui框架
 
-使用postcss-px2rem转换成rem单位，但是mint-ui用的px单位，也会被转换成rem单位，这里我做了修改
+使用postcss-px2rem转换成rem单位，但是mint-ui用的px单位，也会被转换成rem单位，这里我对postcss-px2rem的源码做了修改
 
 postcss-px2rem-exclude也可以把不需要转换的文件排除，但是我这里不可行
 
@@ -74,6 +74,12 @@ module.exports = postcss.plugin('postcss-px2rem', function (options) {
 
 ```
 
-### 
+### 截图
 
 项目比较简单，还需要不断完善
+
+![效果]('https://github.com/yuxiaoxia/jinrixiaozhao/blob/master/screenshot/1.jpg')
+
+![效果]('https://github.com/yuxiaoxia/jinrixiaozhao/blob/master/screenshot/2.jpg')
+
+![效果]('https://github.com/yuxiaoxia/jinrixiaozhao/blob/master/screenshot/3.jpg')

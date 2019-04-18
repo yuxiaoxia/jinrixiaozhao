@@ -15,6 +15,13 @@ export const requestCompanyDetail = (params) => {
     data: params,
   })
 }
+export const requestRecruitDetail = (params) => {
+  return http({
+    url: `endpoints/employment/${params.id}`,
+    method: 'GET',
+    data: params,
+  })
+}
 export const requestCompanyEmployment = (params) => {
   return http({
     url: `endpoints/employment`,
