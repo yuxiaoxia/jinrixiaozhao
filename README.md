@@ -78,8 +78,8 @@ module.exports = postcss.plugin('postcss-px2rem', function (options) {
 
 项目比较简单，还需要不断完善
 
-![效果]('https://github.com/yuxiaoxia/jinrixiaozhao/blob/master/screenshot/1.jpg')
+![效果]('http://wxiaoxia.oss-cn-shenzhen.aliyuncs.com/blog/1.jpg')
 
-![效果]('https://github.com/yuxiaoxia/jinrixiaozhao/blob/master/screenshot/2.jpg')
+![效果]('http://wxiaoxia.oss-cn-shenzhen.aliyuncs.com/blog/2.jpg')
 
-![效果]('https://github.com/yuxiaoxia/jinrixiaozhao/blob/master/screenshot/3.jpg')
+![效果]('http://wxiaoxia.oss-cn-shenzhen.aliyuncs.com/blog/3.jpg')
